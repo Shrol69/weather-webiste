@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather and News App</title>
+    <link rel="stylesheet" href="styles_1.css">
+</head>
+<body>
+     <nav class="sidebar" aria-label="Main Navigation">
+        <div class="sidebar-item" tabindex="0"><img src="../path_to_icon/weather.png" alt="Weather icon"><span>Weather</span></div>
+        <div class="sidebar-item" tabindex="0">
+            <a href="../explore/explore.html" aria-label="Explore">
+                <img src="../path_to_icon/explore.png" alt="Explore icon">
+                <span>Explore</span>
+            </a>
+        </div>
+        
+        <div class="sidebar-item" tabindex="0"><img src="../path_to_icon/cities.png" alt="Cities icon"><span>Cities</span></div>
+    </nav>
+
+    </div>
+    <main>
+        <header>
+            <h1>SkyNewsNow</h1>
+            <form id="location-form">
+                <input type="text" id="location-input" placeholder="Enter location">
+                <button type="submit">Search</button>
+            </form>
+        </header>
+        <div id="weather-container">
+            <h2></h2>
+            <div id="weather-info">
+                <h2 id="city-name"></h2>
+                <p id="weather-description"></p>
+                <p id="temperature"></p>
+                <p id="humidity"></p>
+                <p id="wind-speed"></p>
+            </div>
+            <div id="location-image-container">
+                <img id="location-image" src="../SkyNewsNow-.png" alt="Location Image">
+            </div>
+        </div>
+        <div id="news-container">
+            <!-- News articles will be injected here -->
+        </div>
+    </main>
+    <div id="error-message" style="display: none;"></div>
+    <div id="loading-spinner" style="display: none;">Loading...</div>
+    <script src="app.js"></script>
+</body>
+</html>

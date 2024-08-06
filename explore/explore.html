@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="styles_2.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-item" tabindex="0" onclick="navigateTo('index.html')"><img src="../path_to_icon/weather.png" alt="Weather icon"><span>Weather</span></div>
+        <div class="sidebar-item" tabindex="0" onclick="navigateTo('explore.html')"><img src="../path_to_icon/explore.png" alt="Explore icon"><span>Explore</span></div>
+        <div class="sidebar-item" tabindex="0" onclick="navigateTo('about.html')"><img src="../path_to_icon/about.png" alt="About icon"><span>About</span></div>
+    </div>
+
+    <main>
+        <header>
+            <h1>Explore New Places</h1>
+            <form id="location-form">
+                <input type="text" id="location-input" placeholder="Enter city name">
+                <button type="submit">Search</button>
+            </form>
+        </header>
+
+        <div id="weather-info">
+            <!-- Weather information will be displayed here -->
+        </div>
+    </main>
+
+    <script src="explore.js"></script>
+</body>
+</html>
